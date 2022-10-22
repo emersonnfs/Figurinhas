@@ -13,6 +13,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Courtois");
 			fi.setPosicao("Goleiro");
 			fi.setTime("Real Madrid");
+			fi.setPais("Bélgica");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -20,6 +21,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Alexander-Arnold");
 			fi.setPosicao("Lateral-Direita");
 			fi.setTime("Liverpool");
+			fi.setPais("Inglaterra");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -27,6 +29,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("van Dijk");
 			fi.setPosicao("Zagueiro");
 			fi.setTime("Liverpool");
+			fi.setPais("Holanda");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -34,6 +37,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Ruben Dias");
 			fi.setPosicao("Zagueiro");
 			fi.setTime("Manchester City");
+			fi.setPais("Portugal");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -41,6 +45,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Davies");
 			fi.setPosicao("Lateral-Esquerdo");
 			fi.setTime("Bayer de Munique");
+			fi.setPais("Canadá");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -48,6 +53,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Kimmich");
 			fi.setPosicao("Volante");
 			fi.setTime("Bayer de Munique");
+			fi.setPais("Alemanha");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -55,6 +61,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("De Bruyne");
 			fi.setPosicao("Meio-Campo");
 			fi.setTime("Manchester City");
+			fi.setPais("Bélgica");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -62,6 +69,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Modrić");
 			fi.setPosicao("Meio-Campo");
 			fi.setTime("Real Madrid");
+			fi.setPais("Croácia");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -69,6 +77,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Messi");
 			fi.setPosicao("Atacante");
 			fi.setTime("PSG");
+			fi.setPais("Argentina");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -76,6 +85,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Cristiano Ronaldo");
 			fi.setPosicao("Atacante");
 			fi.setTime("Manchester United");
+			fi.setPais("Portugal");
 			listaFigurinhasInternacional.add(fi);
 			
 			fi= new FigurinhasInternacionaisTO();
@@ -83,6 +93,7 @@ public class FigurinhasInternacionaisDAO {
 			fi.setNome("Benzema");
 			fi.setPosicao("Atacante");
 			fi.setTime("Real Madrid");
+			fi.setPais("França");
 			listaFigurinhasInternacional.add(fi);
 		}
 		
