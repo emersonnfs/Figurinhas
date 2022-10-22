@@ -2,7 +2,7 @@ package br.com.fiap.to;
 
 public class FigurinhasInternacionaisTO {
 	int id;
-	private String nome,posicao,time;
+	private String nome,posicao,time,pais;
 	
 	public int getId() {
 		return id;
@@ -28,13 +28,20 @@ public class FigurinhasInternacionaisTO {
 	public void setTime(String time) {
 		this.time = time;
 	}
+	public String getPais() {
+		return pais;
+	}
+	public void setPais(String pais) {
+		this.pais = pais;
+	}
 	public FigurinhasInternacionaisTO() {
 		
 	}
-	public FigurinhasInternacionaisTO( int id,String nome,String posicao,String time) {
+	public FigurinhasInternacionaisTO( int id,String nome,String posicao,String time,String pais) {
 		this.id=id;
 		this.nome=nome;
 		this.posicao=posicao;
 		this.time=time;
+		this.pais=pais;
 	}
 }
