@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import {H1Titulo,DivPagina,LabelLogin,DivInputLogin,DivEntrar,ButtonEntrar,FieldsetLogin,H4Login} from "../style/styled";
 
 export default function Login() {
   const [usuario, setUsuario] = useState({
@@ -36,14 +37,14 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <h2>LOGIN DE USUÁRIOS</h2>
+    <DivPagina>
+      <H1Titulo>LOGIN DE USUÁRIOS</H1Titulo>
       <div>
         <form onSubmit={logar}>
-          <fieldset>
-            <legend>LOGIN</legend>
-            <div>
-              <label htmlFor="idLogin">Usuário</label>
+          <FieldsetLogin>
+            <H4Login>LOGIN</H4Login>
+            <DivInputLogin>
+              <LabelLogin htmlFor="idLogin">Usuário</LabelLogin>
               <input
                 type="text"
                 name="login"
@@ -52,9 +53,9 @@ export default function Login() {
                 value={usuario.login}
                 onChange={handleChange}
               />
-            </div>
-            <div>
-              <label htmlFor="idSenha">Senha</label>
+            </DivInputLogin>
+            <DivInputLogin>
+              <LabelLogin htmlFor="idSenha">Senha</LabelLogin>
               <input
                 type="password"
                 name="senha"
@@ -63,13 +64,13 @@ export default function Login() {
                 value={usuario.senha}
                 onChange={handleChange}
               />
-            </div>
-            <div>
-              <button>Logar</button>
-            </div>
-          </fieldset>
+            </DivInputLogin>
+            <DivEntrar>
+              <ButtonEntrar>Entrar</ButtonEntrar>
+            </DivEntrar>
+          </FieldsetLogin>
         </form>
       </div>
-    </div>
+    </DivPagina>
   );
 }

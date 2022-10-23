@@ -11,7 +11,16 @@ import Modric from "../imgs/ImagensFigurinhasInternacionais/Modric.webp"
 import Messi from "../imgs/ImagensFigurinhasInternacionais/Messi.webp"
 import CristianoRonaldo from "../imgs/ImagensFigurinhasInternacionais/CristianoRonaldo.webp"
 import Benzema from "../imgs/ImagensFigurinhasInternacionais/Benzema.webp"
-
+import { DivFigurinha,ImgFigurinha,DivPaginaFigurinhas,DivCamposFigurinha,PFigurinha,ImgBandeira,DivNomeP,DivPagina,H1Titulo} from '../style/styled';
+import Belgica from "../imgs/ImagensBandeiras/bandeiraBelgica.webp"
+import Inglaterra from "../imgs/ImagensBandeiras/bandeiraInglaterra.png"
+import Alemanha from "../imgs/ImagensBandeiras/bandeiraAlemanha.png"
+import Argentina from "../imgs/ImagensBandeiras/bandeiraArgentina.jpg"
+import Canada from "../imgs/ImagensBandeiras/bandeiraCanada.webp"
+import Croacia from "../imgs/ImagensBandeiras/bandeiraCroacia.webp"
+import Franca from "../imgs/ImagensBandeiras/bandeiraFranca.png"
+import Holanda from "../imgs/ImagensBandeiras/bandeiraHolanda.png"
+import Portugal from "../imgs/ImagensBandeiras/bandeiraPortugal.jpg"
 
 const usuario = sessionStorage.getItem("usuario-validado");
 
@@ -33,25 +42,36 @@ export default function FigurinhasInternacionais() {
         .catch(err => console.error(err));
     }, []);
 
-    const fotos = [Courtois, AlexanderArnold, VanDijk, RubenDias, Davies, Kimmich, DeBruyne, Modric, Messi, CristianoRonaldo, Benzema];
-    
-
+    const fotos = [Courtois, AlexanderArnold, VanDijk, RubenDias, Davies, Kimmich, DeBruyne, Modric, Messi,      CristianoRonaldo, Benzema];
+    const bandeiras=[Belgica,Inglaterra,      Holanda, Portugal,  Canada, Alemanha,Belgica,  Croacia ,Argentina, Portugal,         Franca];
     return (
-    <div>
-        <h1>
+    <DivPagina>
+        <H1Titulo>
             FIGURINHAS INTERNACIONAIS
-        </h1>
-        <div>
+        </H1Titulo>
+        <DivPaginaFigurinhas>
             {figurinhas.map(figurinha => (
-                <div key={figurinha.id}>
-                    <img src={fotos[figurinha.id-1]} alt={figurinha.nome} />
-                    <h3>{figurinha.nome}</h3>
-                    <h3>{figurinha.posicao}</h3>
-                    <h3>{figurinha.time}</h3>
-                    <h3>{figurinha.pais}</h3>
-                </div>
+                    <div key={figurinha.id}>
+                        <DivFigurinha>
+                            <DivCamposFigurinha>
+                                <PFigurinha>{figurinha.pais}</PFigurinha>
+                                <ImgBandeira src={bandeiras[figurinha.id-1]} alt={figurinha.pais} />
+                            </DivCamposFigurinha>
+                            <ImgFigurinha src={fotos[figurinha.id-1]} alt={figurinha.nome} />
+                            <DivCamposFigurinha>
+                                <DivNomeP>
+                                    <PFigurinha>Nome:</PFigurinha>
+                                    <PFigurinha>{figurinha.nome}</PFigurinha>
+                                </DivNomeP>
+                                <DivNomeP>
+                                    <PFigurinha>Pos: {figurinha.posicao}</PFigurinha>
+                                    <PFigurinha>Time: {figurinha.time}</PFigurinha>    
+                                </DivNomeP>
+                            </DivCamposFigurinha>
+                        </DivFigurinha>
+                    </div>
             ))}
-        </div>
-    </div>
+        </DivPaginaFigurinhas>
+    </DivPagina>
   )
 }
